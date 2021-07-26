@@ -18,7 +18,6 @@ phases:
       - echo $_PROJECT_NAME
       - echo $AWS_ACCOUNT_ID
       - echo $_AWS_REGION
-      - echo $_ECR_NAME
       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
       - echo start command
       - $(aws ecr get-login --no-include-email --region $_AWS_REGION)
